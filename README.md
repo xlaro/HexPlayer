@@ -47,7 +47,7 @@
 
 Getting started with HexPlayer is quick and straightforward:
 
-1. Head over to the [Releases](https://github.com) page.
+1. Head over to the [Releases](https://github.com/xlaro/HexPlayer/releases/) page.
 2. Download the latest installer: `HexPlayer_Setup_1.0.0.exe`.
 3. Run the installer and launch the application.
 4. Input your stream URL or IPTV playlist and click play!
