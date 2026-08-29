@@ -1,5 +1,5 @@
 {
-  "latestVersion": "1.1.0",
-  "updateUrl": "https://your-domain.com/download",
+  "latestVersion": "1.1.1",
+  "updateUrl": "https://github.com/xlaro/HexPlayer/releases/tag/v1.0.0",
   "message": "New version available with bug fixes."
 }
