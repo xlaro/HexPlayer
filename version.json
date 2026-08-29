@@ -1,5 +1,10 @@
 {
-  "latestVersion": "1.1.0",
-  "updateUrl": "https://github.com/xlaro/HexPlayer/releases/tag/v1.0.0",
-  "message": "New version available with bug fixes."
+  "currentVersion": "1.0.0",
+  "latestVersion": "1.1.1",
+  "updateUrl": "https://github.com/xlaro/HexPlayer/releases/latest",
+  "message": "🚀 HexPlayer v1.1.1 is here!\n\n✨ What's New:\n• Polished UI & Modernized Player Interface\n• Enhanced Playlist Management (Drag & Drop, Sorting)\n• Favorites (Fav) Quick-Access Feature\n• Improved Audio/Video Engine Performance\n• General Bug Fixes & Stability Improvements",
+  "developer": "xlaro",
+  "githubRepository": "https://github.com/xlaro/HexPlayer",
+  "officialWebsite": "https://example.com",
+  "telegramChannel": "https://t.me/HimelOP_Official"
 }
