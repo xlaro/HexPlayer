@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hex Player — High Performance Windows Media Player</title>
+    <title>Hex Player — High-Performance Streaming & IPTV Engine</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -35,9 +38,6 @@
             background-color: #0B0F17;
             color: #F8FAFC;
         }
-        .glow-effect {
-            box-shadow: 0 0 50px -10px rgba(59, 130, 246, 0.3);
-        }
         .card-glow:hover {
             box-shadow: 0 0 30px -5px rgba(59, 130, 246, 0.2);
             border-color: #3B82F6;
@@ -50,11 +50,13 @@
 </head>
 <body class="font-sans antialiased selection:bg-blue-500 selection:text-white">
 
+    <!-- Background Elements -->
     <div class="fixed inset-0 bg-grid pointer-events-none z-0 opacity-40"></div>
     <div class="fixed -top-40 -left-40 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none z-0"></div>
     <div class="fixed top-1/2 -right-40 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none z-0"></div>
 
     <div class="relative z-10">
+        <!-- Navigation -->
         <nav class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between border-b border-gray-800/60">
             <div class="flex items-center gap-3">
                 <img src="https://raw.githubusercontent.com/xlaro/HexPlayer/main/assets/logo.png" alt="Hex Player Logo" class="w-10 h-10 rounded-xl shadow-md">
@@ -63,24 +65,24 @@
             <div class="flex items-center gap-6">
                 <a href="#features" class="text-sm font-medium text-gray-400 hover:text-white transition">Features</a>
                 <a href="#gallery" class="text-sm font-medium text-gray-400 hover:text-white transition">Screenshots</a>
-                <a href="#stats" class="text-sm font-medium text-gray-400 hover:text-white transition">Stats</a>
                 <a href="https://github.com/xlaro/HexPlayer" target="_blank" class="text-gray-400 hover:text-white text-xl transition">
                     <i class="fa-brands fa-github"></i>
                 </a>
             </div>
         </nav>
 
+        <!-- Hero Section -->
         <section class="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
             <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-8">
                 <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
                 v1.0.0 Released for Windows
             </div>
             <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
-                Stream & Play Media with <br/>
-                <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500">Zero Hardware Overhead</span>
+                Advanced Video & Stream Playback <br/>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500">Engineered for Modern Desktop</span>
             </h1>
             <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-                A sleek, high-performance media player built exclusively for Windows. Engineered for ultra-smooth local video playback and advanced network stream parsing.
+                An ultra-responsive desktop media solution featuring native DRM decryptor engines, smart playlist parsing, and dynamic network request routing.
             </p>
             
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -94,6 +96,7 @@
                 </a>
             </div>
 
+            <!-- Badges Bar -->
             <div class="flex flex-wrap items-center justify-center gap-4 mt-12 pt-8 border-t border-gray-800/40">
                 <img src="https://img.shields.io/github/v/release/xlaro/HexPlayer?style=for-the-badge&color=2563eb" alt="Release">
                 <img src="https://img.shields.io/badge/platform-Windows_10_|_11-0078D6?style=for-the-badge&logo=windows" alt="Platform">
@@ -102,86 +105,193 @@
             </div>
         </section>
 
+        <!-- Key Features Section -->
         <section id="features" class="max-w-7xl mx-auto px-6 py-16">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold text-white">Built for Power & Speed</h2>
-                <p class="text-gray-400 mt-2">Everything you need for seamless media playback</p>
+                <h2 class="text-3xl font-bold text-white">Core Architectural Features</h2>
+                <p class="text-gray-400 mt-2">Unique performance features re-written from the ground up</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Feature 1 -->
                 <div class="bg-hex-card border border-hex-border rounded-2xl p-6 transition duration-300 card-glow">
-                    <div class="w-12 h-12 bg-blue-500/10 border border-blue-500/20 rounded-xl flex items-center justify-center text-blue-400 text-xl mb-5">
-                        <i class="fa-solid fa-play"></i>
+                    <div class="w-10 h-10 bg-blue-500/10 border border-blue-500/20 rounded-xl flex items-center justify-center text-blue-400 text-lg mb-4">
+                        <i class="fa-solid fa-list-ul"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Network Stream Support</h3>
+                    <h3 class="text-lg font-bold text-white mb-2">Multi-Format Feed Ingestion</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Native parsing for live video links including HLS (.m3u8), MP4, WebM, and custom network feeds without buffering lags.
+                        Effortlessly read, parse, and catalog remote IPTV channel structures formatted in raw M3U strings or structured JSON payloads.
                     </p>
                 </div>
 
+                <!-- Feature 2 -->
                 <div class="bg-hex-card border border-hex-border rounded-2xl p-6 transition duration-300 card-glow">
-                    <div class="w-12 h-12 bg-indigo-500/10 border border-indigo-500/20 rounded-xl flex items-center justify-center text-indigo-400 text-xl mb-5">
-                        <i class="fa-solid fa-code"></i>
+                    <div class="w-10 h-10 bg-indigo-500/10 border border-indigo-500/20 rounded-xl flex items-center justify-center text-indigo-400 text-lg mb-4">
+                        <i class="fa-solid fa-rotate"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Custom Request Headers</h3>
+                    <h3 class="text-lg font-bold text-white mb-2">Automated Background Sync</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Inject custom User-Agents, Referrers, and Auth Tokens directly into video requests for target stream access.
+                        Keep live channel lineups perpetually fresh with silent background re-indexing of linked remote stream sources.
                     </p>
                 </div>
 
+                <!-- Feature 3 -->
                 <div class="bg-hex-card border border-hex-border rounded-2xl p-6 transition duration-300 card-glow">
-                    <div class="w-12 h-12 bg-purple-500/10 border border-purple-500/20 rounded-xl flex items-center justify-center text-purple-400 text-xl mb-5">
-                        <i class="fa-solid fa-microchip"></i>
+                    <div class="w-10 h-10 bg-purple-500/10 border border-purple-500/20 rounded-xl flex items-center justify-center text-purple-400 text-lg mb-4">
+                        <i class="fa-solid fa-tv"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2">Hardware Acceleration</h3>
+                    <h3 class="text-lg font-bold text-white mb-2">Live Program Metadata Parsing</h3>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Optimized GPU decoding ensures smooth 60fps video playback with ultra-low CPU and battery resource consumption.
+                        Extract and render detailed TV guide timelines directly from embedded XMLTV/EPG feeds linked within your playlists.
                     </p>
                 </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-hex-card border border-hex-border rounded-2xl p-6 transition duration-300 card-glow">
+                    <div class="w-10 h-10 bg-emerald-500/10 border border-emerald-500/20 rounded-xl flex items-center justify-center text-emerald-400 text-lg mb-4">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">DASH & ClearKey Decryption</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Native Shaka Player engine integration capable of processing protected MPEG-DASH media streams with custom ClearKey pairs.
+                    </p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-hex-card border border-hex-border rounded-2xl p-6 transition duration-300 card-glow">
+                    <div class="w-10 h-10 bg-amber-500/10 border border-amber-500/20 rounded-xl flex items-center justify-center text-amber-400 text-lg mb-4">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Dynamic Header Injection</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Pass custom HTTP request headers, authorization tokens, and spoofed User-Agents at both playlist fetch and video segment levels.
+                    </p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="bg-hex-card border border-hex-border rounded-2xl p-6 transition duration-300 card-glow">
+                    <div class="w-10 h-10 bg-cyan-500/10 border border-cyan-500/20 rounded-xl flex items-center justify-center text-cyan-400 text-lg mb-4">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Adaptive Bitrate Engine</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Powered by hls.js for seamless chunk buffering, real-time quality switching, and borderless immersive viewing.
+                    </p>
+                </div>
+
+                <!-- Feature 7 -->
+                <div class="bg-hex-card border border-hex-border rounded-2xl p-6 transition duration-300 card-glow">
+                    <div class="w-10 h-10 bg-pink-500/10 border border-pink-500/20 rounded-xl flex items-center justify-center text-pink-400 text-lg mb-4">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Instant Channel Indexing</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Zero-latency fuzzy search filter designed to scan through thousands of active media items and categories instantly.
+                    </p>
+                </div>
+
+                <!-- Feature 8 -->
+                <div class="bg-hex-card border border-hex-border rounded-2xl p-6 transition duration-300 card-glow">
+                    <div class="w-10 h-10 bg-rose-500/10 border border-rose-500/20 rounded-xl flex items-center justify-center text-rose-400 text-lg mb-4">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Multi-Track Audio Demuxer</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Detects and allows immediate hot-swapping between alternative language tracks and multi-channel audio feeds.
+                    </p>
+                </div>
+
+                <!-- Feature 9 -->
+                <div class="bg-hex-card border border-hex-border rounded-2xl p-6 transition duration-300 card-glow">
+                    <div class="w-10 h-10 bg-teal-500/10 border border-teal-500/20 rounded-xl flex items-center justify-center text-teal-400 text-lg mb-4">
+                        <i class="fa-solid fa-keyboard"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Power-User Keybindings</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Comprehensive keyboard bindings to instantly toggle full-screen mode, step through channels, adjust volume, and inspect stream stats.
+                    </p>
+                </div>
+
+                <!-- Feature 10 -->
+                <div class="bg-hex-card border border-hex-border rounded-2xl p-6 transition duration-300 card-glow">
+                    <div class="w-10 h-10 bg-violet-500/10 border border-violet-500/20 rounded-xl flex items-center justify-center text-violet-400 text-lg mb-4">
+                        <i class="fa-solid fa-palette"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Modern Slate Interface</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Crafted with modern Material design concepts, optimized for eye comfort with true dark/light contrast modes.
+                    </p>
+                </div>
+
+                <!-- Feature 11 -->
+                <div class="bg-hex-card border border-hex-border rounded-2xl p-6 transition duration-300 card-glow">
+                    <div class="w-10 h-10 bg-sky-500/10 border border-sky-500/20 rounded-xl flex items-center justify-center text-sky-400 text-lg mb-4">
+                        <i class="fa-solid fa-link"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Direct Stream Launcher</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Quick-launch input bar for testing isolated stream links accompanied by custom authorization and decryption keys.
+                    </p>
+                </div>
+
+                <!-- Feature 12 -->
+                <div class="bg-hex-card border border-hex-border rounded-2xl p-6 transition duration-300 card-glow">
+                    <div class="w-10 h-10 bg-orange-500/10 border border-orange-500/20 rounded-xl flex items-center justify-center text-orange-400 text-lg mb-4">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Native Electron Core</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Built upon Electron framework to deliver native OS window controls, GPU acceleration, and efficient memory management.
+                    </p>
+                </div>
+
             </div>
         </section>
 
+        <!-- Screenshots Gallery -->
         <section id="gallery" class="max-w-7xl mx-auto px-6 py-16">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold text-white">Interface Showcase</h2>
-                <p class="text-gray-400 mt-2">Designed with a modern, dark aesthetic for continuous night viewing</p>
+                <p class="text-gray-400 mt-2">Designed for fast channel browsing and rich player controls</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-6">
                 <div class="group relative bg-hex-card border border-hex-border rounded-2xl overflow-hidden shadow-2xl transition hover:border-blue-500/50">
                     <img src="https://raw.githubusercontent.com/xlaro/HexPlayer/main/screenshot/Hex%20Player%20Screenshot%20(1).png" alt="Screenshot 1" class="w-full h-auto object-cover transform group-hover:scale-102 transition duration-500">
                     <div class="p-4 bg-hex-card/90 border-t border-hex-border">
-                        <p class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Main Dashboard</p>
-                        <p class="text-sm text-gray-300">Clean player view and intuitive playback controls</p>
+                        <p class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Player View</p>
+                        <p class="text-sm text-gray-300">Clean player dashboard with video controls</p>
                     </div>
                 </div>
 
                 <div class="group relative bg-hex-card border border-hex-border rounded-2xl overflow-hidden shadow-2xl transition hover:border-blue-500/50">
                     <img src="https://raw.githubusercontent.com/xlaro/HexPlayer/main/screenshot/Hex%20Player%20Screenshot%20(2).png" alt="Screenshot 2" class="w-full h-auto object-cover transform group-hover:scale-102 transition duration-500">
                     <div class="p-4 bg-hex-card/90 border-t border-hex-border">
-                        <p class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Stream Configurator</p>
-                        <p class="text-sm text-gray-300">Input network links and manage HTTP request headers</p>
+                        <p class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Stream & DRM Config</p>
+                        <p class="text-sm text-gray-300">ClearKey DRM and HTTP header settings</p>
                     </div>
                 </div>
 
                 <div class="group relative bg-hex-card border border-hex-border rounded-2xl overflow-hidden shadow-2xl transition hover:border-blue-500/50">
                     <img src="https://raw.githubusercontent.com/xlaro/HexPlayer/main/screenshot/Hex%20Player%20Screenshot%20(3).png" alt="Screenshot 3" class="w-full h-auto object-cover transform group-hover:scale-102 transition duration-500">
                     <div class="p-4 bg-hex-card/90 border-t border-hex-border">
-                        <p class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Playlist Manager</p>
-                        <p class="text-sm text-gray-300">Fast playlist filtering and local channel organization</p>
+                        <p class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Playlist & Channel Search</p>
+                        <p class="text-sm text-gray-300">Organize M3U/JSON playlists and channel categories</p>
                     </div>
                 </div>
 
                 <div class="group relative bg-hex-card border border-hex-border rounded-2xl overflow-hidden shadow-2xl transition hover:border-blue-500/50">
                     <img src="https://raw.githubusercontent.com/xlaro/HexPlayer/main/screenshot/Hex%20Player%20Screenshot%20(4).png" alt="Screenshot 4" class="w-full h-auto object-cover transform group-hover:scale-102 transition duration-500">
                     <div class="p-4 bg-hex-card/90 border-t border-hex-border">
-                        <p class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Audio & Video Settings</p>
-                        <p class="text-sm text-gray-300">Advanced rendering tweaks and hardware controls</p>
+                        <p class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Audio & EPG Settings</p>
+                        <p class="text-sm text-gray-300">Multi-audio track picker and EPG listings</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Legal & Terms Section -->
         <section class="max-w-5xl mx-auto px-6 py-16">
             <div class="bg-hex-card border border-hex-border rounded-2xl p-8 space-y-6">
                 <div>
@@ -189,7 +299,7 @@
                         <i class="fa-solid fa-scale-balanced text-blue-400"></i> License & Legal Disclaimer
                     </h3>
                     <p class="text-gray-400 text-sm mt-2 leading-relaxed">
-                        Hex Player is distributed under open-source terms. Hex Player is a standalone media player utility; it does not host, stream, sell, or index any media channels or copyrighted streams. Users are strictly responsible for providing their own legal stream content.
+                        Hex Player is distributed as open-source software under the terms outlined in the LICENSE file. Hex Player is purely a playback client application. It does not provide, host, transmit, or index any IPTV streams, M3U playlists, or media files. End-users are strictly responsible for providing their own legal stream links.
                     </p>
                 </div>
                 <div class="border-t border-gray-800 pt-6">
@@ -197,12 +307,13 @@
                         <i class="fa-solid fa-shield-halved text-blue-400"></i> Terms of Service
                     </h3>
                     <p class="text-gray-400 text-sm mt-2 leading-relaxed">
-                        By using Hex Player, you agree to comply with all applicable local and international copyright regulations. Developers assume no liability for unauthorized broadcasting or stream usage conducted by end-users.
+                        By using Hex Player, you agree to comply with all applicable local and international intellectual property laws. The developers bear no liability for unauthorized broadcasting or improper media access performed using this application.
                     </p>
                 </div>
             </div>
         </section>
 
+        <!-- Footer -->
         <footer class="border-t border-gray-800/60 py-8 text-center text-gray-500 text-sm">
             <p>© 2026 Hex Player Project. Open Source Software.</p>
         </footer>
