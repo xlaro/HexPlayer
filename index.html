@@ -1,13 +1,212 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex Player — High Performance Windows Media Player</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        hex: {
+                            base: '#0B0F17',
+                            card: '#131B2E',
+                            border: '#1E293B',
+                            accent: '#3B82F6',
+                            glow: '#2563EB',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0B0F17;
+            color: #F8FAFC;
+        }
+        .glow-effect {
+            box-shadow: 0 0 50px -10px rgba(59, 130, 246, 0.3);
+        }
+        .card-glow:hover {
+            box-shadow: 0 0 30px -5px rgba(59, 130, 246, 0.2);
+            border-color: #3B82F6;
+        }
+        .bg-grid {
+            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 30px 30px;
+        }
+    </style>
 </head>
-<body>
+<body class="font-sans antialiased selection:bg-blue-500 selection:text-white">
 
-    <h1>Hello World!</h1>
-    <p>This website is hosted on GitHub Pages.</p>
+    <div class="fixed inset-0 bg-grid pointer-events-none z-0 opacity-40"></div>
+    <div class="fixed -top-40 -left-40 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none z-0"></div>
+    <div class="fixed top-1/2 -right-40 w-96 h-96 bg-indigo-600/10 rounded-full blur-3xl pointer-events-none z-0"></div>
+
+    <div class="relative z-10">
+        <nav class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between border-b border-gray-800/60">
+            <div class="flex items-center gap-3">
+                <img src="https://raw.githubusercontent.com/xlaro/HexPlayer/main/assets/logo.png" alt="Hex Player Logo" class="w-10 h-10 rounded-xl shadow-md">
+                <span class="text-xl font-bold tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">Hex Player</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#features" class="text-sm font-medium text-gray-400 hover:text-white transition">Features</a>
+                <a href="#gallery" class="text-sm font-medium text-gray-400 hover:text-white transition">Screenshots</a>
+                <a href="#stats" class="text-sm font-medium text-gray-400 hover:text-white transition">Stats</a>
+                <a href="https://github.com/xlaro/HexPlayer" target="_blank" class="text-gray-400 hover:text-white text-xl transition">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </nav>
+
+        <section class="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-8">
+                <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+                v1.0.0 Released for Windows
+            </div>
+            <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                Stream & Play Media with <br/>
+                <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-500">Zero Hardware Overhead</span>
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                A sleek, high-performance media player built exclusively for Windows. Engineered for ultra-smooth local video playback and advanced network stream parsing.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="https://github.com/xlaro/HexPlayer/releases/tag/v1.0.0" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold flex items-center justify-center gap-3 transition shadow-lg shadow-blue-600/30">
+                    <i class="fa-brands fa-windows text-xl"></i>
+                    <span>Download for Windows</span>
+                </a>
+                <a href="https://github.com/xlaro/HexPlayer" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-hex-card hover:bg-gray-800 border border-hex-border text-gray-300 font-semibold flex items-center justify-center gap-3 transition">
+                    <i class="fa-brands fa-github text-xl"></i>
+                    <span>View Repository</span>
+                </a>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-center gap-4 mt-12 pt-8 border-t border-gray-800/40">
+                <img src="https://img.shields.io/github/v/release/xlaro/HexPlayer?style=for-the-badge&color=2563eb" alt="Release">
+                <img src="https://img.shields.io/badge/platform-Windows_10_|_11-0078D6?style=for-the-badge&logo=windows" alt="Platform">
+                <img src="https://img.shields.io/github/downloads/xlaro/HexPlayer/total?style=for-the-badge&color=f97316" alt="Downloads">
+                <img src="https://img.shields.io/github/license/xlaro/HexPlayer?style=for-the-badge&color=10b981" alt="License">
+            </div>
+        </section>
+
+        <section id="features" class="max-w-7xl mx-auto px-6 py-16">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white">Built for Power & Speed</h2>
+                <p class="text-gray-400 mt-2">Everything you need for seamless media playback</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-hex-card border border-hex-border rounded-2xl p-6 transition duration-300 card-glow">
+                    <div class="w-12 h-12 bg-blue-500/10 border border-blue-500/20 rounded-xl flex items-center justify-center text-blue-400 text-xl mb-5">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Network Stream Support</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Native parsing for live video links including HLS (.m3u8), MP4, WebM, and custom network feeds without buffering lags.
+                    </p>
+                </div>
+
+                <div class="bg-hex-card border border-hex-border rounded-2xl p-6 transition duration-300 card-glow">
+                    <div class="w-12 h-12 bg-indigo-500/10 border border-indigo-500/20 rounded-xl flex items-center justify-center text-indigo-400 text-xl mb-5">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Custom Request Headers</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Inject custom User-Agents, Referrers, and Auth Tokens directly into video requests for target stream access.
+                    </p>
+                </div>
+
+                <div class="bg-hex-card border border-hex-border rounded-2xl p-6 transition duration-300 card-glow">
+                    <div class="w-12 h-12 bg-purple-500/10 border border-purple-500/20 rounded-xl flex items-center justify-center text-purple-400 text-xl mb-5">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Hardware Acceleration</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Optimized GPU decoding ensures smooth 60fps video playback with ultra-low CPU and battery resource consumption.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="max-w-7xl mx-auto px-6 py-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-white">Interface Showcase</h2>
+                <p class="text-gray-400 mt-2">Designed with a modern, dark aesthetic for continuous night viewing</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="group relative bg-hex-card border border-hex-border rounded-2xl overflow-hidden shadow-2xl transition hover:border-blue-500/50">
+                    <img src="https://raw.githubusercontent.com/xlaro/HexPlayer/main/screenshot/Hex%20Player%20Screenshot%20(1).png" alt="Screenshot 1" class="w-full h-auto object-cover transform group-hover:scale-102 transition duration-500">
+                    <div class="p-4 bg-hex-card/90 border-t border-hex-border">
+                        <p class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Main Dashboard</p>
+                        <p class="text-sm text-gray-300">Clean player view and intuitive playback controls</p>
+                    </div>
+                </div>
+
+                <div class="group relative bg-hex-card border border-hex-border rounded-2xl overflow-hidden shadow-2xl transition hover:border-blue-500/50">
+                    <img src="https://raw.githubusercontent.com/xlaro/HexPlayer/main/screenshot/Hex%20Player%20Screenshot%20(2).png" alt="Screenshot 2" class="w-full h-auto object-cover transform group-hover:scale-102 transition duration-500">
+                    <div class="p-4 bg-hex-card/90 border-t border-hex-border">
+                        <p class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Stream Configurator</p>
+                        <p class="text-sm text-gray-300">Input network links and manage HTTP request headers</p>
+                    </div>
+                </div>
+
+                <div class="group relative bg-hex-card border border-hex-border rounded-2xl overflow-hidden shadow-2xl transition hover:border-blue-500/50">
+                    <img src="https://raw.githubusercontent.com/xlaro/HexPlayer/main/screenshot/Hex%20Player%20Screenshot%20(3).png" alt="Screenshot 3" class="w-full h-auto object-cover transform group-hover:scale-102 transition duration-500">
+                    <div class="p-4 bg-hex-card/90 border-t border-hex-border">
+                        <p class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Playlist Manager</p>
+                        <p class="text-sm text-gray-300">Fast playlist filtering and local channel organization</p>
+                    </div>
+                </div>
+
+                <div class="group relative bg-hex-card border border-hex-border rounded-2xl overflow-hidden shadow-2xl transition hover:border-blue-500/50">
+                    <img src="https://raw.githubusercontent.com/xlaro/HexPlayer/main/screenshot/Hex%20Player%20Screenshot%20(4).png" alt="Screenshot 4" class="w-full h-auto object-cover transform group-hover:scale-102 transition duration-500">
+                    <div class="p-4 bg-hex-card/90 border-t border-hex-border">
+                        <p class="text-xs font-semibold text-blue-400 uppercase tracking-wider">Audio & Video Settings</p>
+                        <p class="text-sm text-gray-300">Advanced rendering tweaks and hardware controls</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="max-w-5xl mx-auto px-6 py-16">
+            <div class="bg-hex-card border border-hex-border rounded-2xl p-8 space-y-6">
+                <div>
+                    <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-scale-balanced text-blue-400"></i> License & Legal Disclaimer
+                    </h3>
+                    <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                        Hex Player is distributed under open-source terms. Hex Player is a standalone media player utility; it does not host, stream, sell, or index any media channels or copyrighted streams. Users are strictly responsible for providing their own legal stream content.
+                    </p>
+                </div>
+                <div class="border-t border-gray-800 pt-6">
+                    <h3 class="text-lg font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-shield-halved text-blue-400"></i> Terms of Service
+                    </h3>
+                    <p class="text-gray-400 text-sm mt-2 leading-relaxed">
+                        By using Hex Player, you agree to comply with all applicable local and international copyright regulations. Developers assume no liability for unauthorized broadcasting or stream usage conducted by end-users.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="border-t border-gray-800/60 py-8 text-center text-gray-500 text-sm">
+            <p>© 2026 Hex Player Project. Open Source Software.</p>
+        </footer>
+    </div>
 
 </body>
 </html>
