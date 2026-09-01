@@ -1,85 +1,90 @@
 # Hex Player
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/username/hex-player/main/assets/logo.png" alt="Hex Player Logo" width="120" height="120">
+  <img src="https://raw.githubusercontent.com/xlaro/HexPlayer/main/assets/logo.png" alt="Hex Player Logo" width="120" height="120">
 </p>
 
 <p align="center">
-  <a href="https://github.com/username/hex-player/releases"><img src="https://img.shields.io/github/v/release/username/hex-player?style=flat-square&color=blue" alt="Latest Version"></a>
-  <a href="#platform-support"><img src="https://img.shields.io/badge/platform-Android%20%7C%20Windows%20%7C%20Linux-green?style=flat-square" alt="Platform"></a>
-  <a href="https://github.com/username/hex-player/releases"><img src="https://img.shields.io/github/downloads/username/hex-player/total?style=flat-square&color=orange" alt="Total Downloads"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/username/hex-player?style=flat-square" alt="License"></a>
+  <a href="https://github.com/xlaro/HexPlayer/releases/latest"><img src="https://img.shields.io/github/v/release/xlaro/HexPlayer?style=flat-square&color=blue" alt="Latest Version"></a>
+  <a href="#platform-support"><img src="https://img.shields.io/badge/platform-Windows-0078D6?style=flat-square&logo=windows" alt="Platform"></a>
+  <a href="https://github.com/xlaro/HexPlayer/releases"><img src="https://img.shields.io/github/downloads/xlaro/HexPlayer/total?style=flat-square&color=orange" alt="Total Downloads"></a>
+  <a href="https://github.com/xlaro/HexPlayer/blob/main/LICENSE"><img src="https://img.shields.io/github/license/xlaro/HexPlayer?style=flat-square" alt="License"></a>
 </p>
 
 ---
 
-## 📖 Overview
+## 📖 Description
 
-**Hex Player** is a lightweight, high-performance media player engineered for seamless local playback and network streaming. Designed with a sleek, modern dark theme, it offers advanced stream parsing, ultra-low latency playback, and flexible customization for modern media consumption.
+**Hex Player** is a sleek, high-performance desktop media player built exclusively for Windows. Engineered for fluid local media playback and advanced network stream parsing, it combines a modern dark aesthetic with lightweight resource consumption. Whether you are running high-bitrate video files or testing custom HTTP/HLS streams, Hex Player delivers a clean, responsive playback experience.
 
 ---
 
 ## 🔥 Key Features
 
-* **Universal Streaming Support:** Smooth handling of HLS (.m3u8), MP4, WebM, and live network streams.
-* **Modern Dark UI:** Built with a clean, responsive layout optimized for effortless navigation across devices.
-* **Low Latency Hardware Acceleration:** High-efficiency video decoding to preserve battery and CPU resources.
-* **Custom Headers & Requests:** Built-in tools to pass custom user-agents, referrers, and authorization headers for advanced stream links.
-* **Playlist Management:** Create, save, and import M3U or custom playlist feeds with instant search capability.
+* **Advanced Stream Playback:** Native handling for network video links, including HLS (.m3u8), MP4, and live stream protocols.
+* **Modern Dark Interface:** Optimized desktop UI designed for comfortable night viewing and zero visual clutter.
+* **Low System Overhead:** Hardware-accelerated decoding engineered for minimal CPU and RAM usage on Windows.
+* **Custom HTTP Headers:** Easily configure user-agents, referrers, and authorization headers for target stream URLs.
+* **Playlist & Queue Controls:** Quick playlist management with instant filtering and file organization.
 
 ---
 
-## 📊 Project Stats
+## 📊 Live Statistics
 
-| Metric | Status |
+| Metric | Details |
 | :--- | :--- |
-| **Total Downloads** | ![Downloads](https://img.shields.io/github/downloads/username/hex-player/total?style=flat-square&label=%20) **10,000+** |
-| **Active Version** | **v1.2.0** |
-| **License** | MIT License |
+| **Total Downloads** | ![Downloads](https://img.shields.io/github/downloads/xlaro/HexPlayer/total?style=flat-square&label=%20) *(Live GitHub Counter)* |
+| **Latest Release** | **v1.0.0** |
+| **Target OS** | Windows 10 / 11 (64-bit) |
+| **License Type** | Open Source |
 
 ---
 
-## 🖥️ Platform Support
+## 💻 Platform Support
 
-* **Android:** 7.0 (API Level 24) and higher
-* **Windows:** Windows 10 / 11 (64-bit)
-* **Linux:** Ubuntu 20.04+ / Debian derivatives
+Currently, **Hex Player** is available exclusively for:
+
+* **Windows 10 / 11** (64-bit)
 
 ---
 
 ## 🖼️ Screenshots
 
 <p align="center">
-  <img src="https://via.placeholder.com/400x225/0f172a/ffffff?text=Main+Player+UI" width="45%" alt="Main Player UI">
-  <img src="https://via.placeholder.com/400x225/0f172a/ffffff?text=Stream+Settings" width="45%" alt="Stream Settings">
+  <img src="https://raw.githubusercontent.com/xlaro/HexPlayer/main/screenshot/Hex%20Player%20Screenshot%20(1).png" width="45%" alt="Hex Player Screenshot 1">
+  <img src="https://raw.githubusercontent.com/xlaro/HexPlayer/main/screenshot/Hex%20Player%20Screenshot%20(2).png" width="45%" alt="Hex Player Screenshot 2">
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/xlaro/HexPlayer/main/screenshot/Hex%20Player%20Screenshot%20(3).png" width="45%" alt="Hex Player Screenshot 3">
+  <img src="https://raw.githubusercontent.com/xlaro/HexPlayer/main/screenshot/Hex%20Player%20Screenshot%20(4).png" width="45%" alt="Hex Player Screenshot 4">
 </p>
 
 ---
 
-## 📥 Download
+## 📥 Download & Installation
 
-Grab the latest build for your platform directly from our GitHub Releases page:
-
-[👉 **Download Hex Player Latest Release**](https://github.com/username/hex-player/releases/latest)
+1. Download the latest Windows release build from the [Releases Page](https://github.com/xlaro/HexPlayer/releases/tag/v1.0.0).
+2. Extract the archive or launch the setup executable.
+3. Run **Hex Player** and start playing your media directly or via network stream link.
 
 ---
 
-## ⚙️ Installation & Quick Start
+## ⚡ Quick Usage Guide
 
-1. Download the executable or APK for your system.
-2. Install and launch **Hex Player**.
-3. Paste a network stream URL or select a local media file to start playback.
+* **Play a Stream:** Click the stream icon, input your target media URL along with any required HTTP headers, and hit **Play**.
+* **Drag and Drop:** Drag any local video file directly into the player window to launch instant playback.
 
 ---
 
 ## 📜 License & Legal
 
-Distributed under the **MIT License**. See `LICENSE` file for full details.
+This project is licensed under the terms outlined in the [LICENSE](https://github.com/xlaro/HexPlayer/blob/main/LICENSE) file. 
 
-> **Legal Disclaimer:** Hex Player does not host, provide, or sell any media content or playlists. Users are entirely responsible for the content they access and stream using this application.
+> **Disclaimer:** Hex Player is a standalone media player tool. It does not provide, host, or index any media channels or copyrighted live streams. Users are solely responsible for providing their own legal stream sources.
 
 ---
 
 ## ⚖️ Terms of Service
 
-By using Hex Player, you agree to comply with all applicable local copyright laws. The developers are not liable for any misuse, unauthorized broadcasting, or breach of third-party streaming policies committed by end-users.
+By using Hex Player, you agree to adhere to all applicable local and international copyright regulations. The developers hold no responsibility or liability for unauthorized access, misuse, or streaming policy violations conducted by end users.
