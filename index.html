@@ -114,6 +114,24 @@
             background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
             background-size: 30px 30px;
         }
+        .hotkey-table td {
+            padding: 0.5rem 1rem;
+            border-bottom: 1px solid #1E293B;
+        }
+        .hotkey-table tr:last-child td {
+            border-bottom: none;
+        }
+        .hotkey-table .key {
+            font-family: 'Plus Jakarta Sans', monospace;
+            background: #1E293B;
+            padding: 0.2rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #94A3B8;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
     </style>
 </head>
 <body class="font-sans antialiased selection:bg-blue-500 selection:text-white">
@@ -134,6 +152,7 @@
             <div class="flex items-center gap-6">
                 <a href="#features" class="text-sm font-medium text-gray-400 hover:text-white transition">Features</a>
                 <a href="#gallery" class="text-sm font-medium text-gray-400 hover:text-white transition">Screenshots</a>
+                <a href="#hotkeys" class="text-sm font-medium text-gray-400 hover:text-white transition">HotKeys</a>
                 <a href="https://github.com/xlaro/HexPlayer" target="_blank" rel="noopener" class="text-gray-400 hover:text-white text-xl transition" aria-label="Hex Player on GitHub">
                     <i class="fa-brands fa-github"></i>
                 </a>
@@ -317,6 +336,37 @@
                     </p>
                 </div>
 
+            </div>
+        </section>
+
+        <!-- HotKeys Section (new) -->
+        <section id="hotkeys" class="max-w-4xl mx-auto px-6 py-16" aria-labelledby="hotkeys-heading">
+            <div class="text-center mb-12">
+                <h2 id="hotkeys-heading" class="text-3xl font-bold text-white">⌨️ Hex Player HotKeys</h2>
+                <p class="text-gray-400 mt-2">Full keyboard control for power users — play, seek, volume, channels and more</p>
+            </div>
+            <div class="bg-hex-card border border-hex-border rounded-2xl overflow-hidden shadow-2xl">
+                <div class="overflow-x-auto">
+                    <table class="hotkey-table w-full text-sm text-gray-300">
+                        <tbody>
+                            <tr><td><span class="key">Space</span></td><td>Play / Pause</td></tr>
+                            <tr><td><span class="key">Ctrl+F</span></td><td>Toggle fast playback (1x ↔ 2x)</td></tr>
+                            <tr><td><span class="key">F</span></td><td>Toggle fullscreen</td></tr>
+                            <tr><td><span class="key">Ctrl+R</span></td><td>Restart playback (reloads the stream)</td></tr>
+                            <tr><td><span class="key">Up</span> / <span class="key">Down</span></td><td>Volume + / -</td></tr>
+                            <tr><td><span class="key">M</span></td><td>Mute / Unmute</td></tr>
+                            <tr><td><span class="key">←</span> / <span class="key">→</span></td><td>Seek ±10 seconds</td></tr>
+                            <tr><td><span class="key">Ctrl+←</span> / <span class="key">Ctrl+→</span></td><td>Seek ±1 minute</td></tr>
+                            <tr><td><span class="key">Shift+←</span> / <span class="key">Shift+→</span></td><td>Seek ±5 seconds</td></tr>
+                            <tr><td><span class="key">PgUp</span> / <span class="key">PgDn</span></td><td>Previous / next channel</td></tr>
+                            <tr><td><span class="key">Backspace</span></td><td>Exit player</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="p-4 border-t border-hex-border bg-hex-base/50 text-xs text-gray-500 flex items-center gap-2">
+                    <i class="fa-regular fa-keyboard text-blue-400"></i>
+                    <span>All keybindings are configurable in the settings panel.</span>
+                </div>
             </div>
         </section>
 
