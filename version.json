@@ -1,8 +1,8 @@
 {
   "currentVersion": "1.1.1",
-  "latestVersion": "1.1.0",
+  "latestVersion": "1.1.1",
   "updateUrl": "https://github.com/xlaro/HexPlayer/releases/latest",
-  "message": "🚀 HexPlayer v1.1.0 is here!\n\n✨ What's New:\n• Polished UI & Modernized Player Interface\n• Enhanced Playlist Management (Drag & Drop, Sorting)\n• Favorites (Fav) Quick-Access Feature\n• Improved Audio/Video Engine Performance\n• General Bug Fixes & Stability Improvements",
+  "message": "🚀 HexPlayer v1.1.1 is here!\n\n✨ What's New:\n• Switch channels right from the player\n• Keyboard shortcuts added\n• Playlist reorder (drag & drop)\n• Auto-refresh playlists (on open / 6h / 12h / 24h)\n• Kodi-style playlist support (KODIPROP + DRM)\n• Custom User-Agent support\n\n⚡ Smoother, faster channel switching + optimized player\n🐛 Fixed channel-switch freeze, header bugs & more",
   "developer": "HexBhai",
   "githubRepository": "https://github.com/xlaro/HexPlayer",
   "officialWebsite": "https://",
