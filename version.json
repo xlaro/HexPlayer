@@ -1,5 +1,5 @@
 {
-  "currentVersion": "1.1.2",
+  "currentVersion": "1.1.1",
   "latestVersion": "1.1.2",
   "updateUrl": "https://github.com/xlaro/HexPlayer/releases/latest",
   "message": "🚀 HexPlayer v1.1.2 is here!\n\n✨ What's New:\n• Custom headers now work on playlists, quality lists & video segments (even on different servers)\n• Auto mode plays all MPD / ClearKey streams on Bitmovin\n• Default player engine is now Auto (Shaka only when you select it)\n• Brand new modern loading spinner\n\n⚡ Faster stream start with smarter engine preloading\n🐛 Fixed streams that failed because Referer / User-Agent headers were missing, plus CORS fixes & more",
