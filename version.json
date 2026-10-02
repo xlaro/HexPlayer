@@ -1,10 +1,10 @@
 {
-  "currentVersion": "1.1.1",
-  "latestVersion": "1.1.1",
+  "currentVersion": "1.1.2",
+  "latestVersion": "1.1.2",
   "updateUrl": "https://github.com/xlaro/HexPlayer/releases/latest",
-  "message": "🚀 HexPlayer v1.1.1 is here!\n\n✨ What's New:\n• Switch channels right from the player\n• Keyboard shortcuts added\n• Playlist reorder (drag & drop)\n• Auto-refresh playlists (on open / 6h / 12h / 24h)\n• Kodi-style playlist support (KODIPROP + DRM)\n• Custom User-Agent support\n\n⚡ Smoother, faster channel switching + optimized player\n🐛 Fixed channel-switch freeze, header bugs & more",
+  "message": "🚀 HexPlayer v1.1.2 is here!\n\n✨ What's New:\n• Custom headers now work on playlists, quality lists & video segments (even on different servers)\n• Auto mode plays all MPD / ClearKey streams on Bitmovin\n• Default player engine is now Auto (Shaka only when you select it)\n• Brand new modern loading spinner\n\n⚡ Faster stream start with smarter engine preloading\n🐛 Fixed streams that failed because Referer / User-Agent headers were missing, plus CORS fixes & more",
   "developer": "HexBhai",
   "githubRepository": "https://github.com/xlaro/HexPlayer",
-  "officialWebsite": "https://",
+  "officialWebsite": "https://hexplayer.hexbhai.cyou/",
   "telegramChannel": "https://t.me/game24x"
 }
